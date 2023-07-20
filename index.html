@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Snake</title>
+    <style>
+        body {
+            min-height: 100vh;
+            min-width: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+            background-color: black;
+        }
+
+        #board {
+            background-color: #CCCCCC;
+            width: 100vmin;
+            height: 100vmin;
+            display: grid;
+            grid-template-rows: repeat(21, 1fr);
+            grid-template-columns: repeat(21, 1fr);
+        }
+
+        .snake {
+            background-color: cyan;
+            border: .25vmin solid black;
+        }
+
+        .food {
+            background-color: crimson;
+            border: .25vmin solid black;
+        }
+    </style>
+</head>
+<body>
+    <div id="board"></div>
+
+    <script src="/js/script.js" defer type="module"></script>
+</body>
+</html>
