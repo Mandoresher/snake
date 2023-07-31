@@ -5,7 +5,7 @@ class Game {
   constructor(canvas) {
       this.canvas = canvas;
       this.ctx = canvas.getContext('2d');
-      this.snake = new Snake();
+      this.snake = new Snake(canvas);
       this.apple = { x: 15, y: 15 };
       this.isGameOver = false;
       this.interval = null;
