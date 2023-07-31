@@ -59,9 +59,9 @@ class Game {
                     this.speed -= 2;
                 }
 
+                // изменение скорости
                 clearInterval(this.interval);
                 this.interval = setInterval(() => this.update(), this.speed);
-                console.log(this.speed)
                 this.snake.grow();
                 this.spawnApple();
                 this.updateScore();
